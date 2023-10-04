@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(60, 238, 184);
+}
 .lista{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(155, 248, 137);
+    background-color: rgb(133, 133, 133);
     color: black;
     margin: AUTO;
     width: 500px;
@@ -25,6 +33,7 @@ ul{
     padding: 0;
     width: 320px;
     display: flex;
+    flex-direction: column;
 }
 ul li{
     width: 320px;
@@ -36,10 +45,11 @@ ul li{
     cursor: pointer;
 }
 .lista3{
+    z-index: 0;
     display: none;
     justify-content: center;
     align-items: flex-end;
-    background-color: black;
+    background-color: rgb(172, 172, 172);
     color: white;
     width: 750px;
     height:750px;

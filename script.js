@@ -1,23 +1,27 @@
-  
-   const li = document.querySelector('li');
-   li.addEventListener('click', abre);
-  
+ //* funcoes
+
+ //* adicionar li
+  function adicionar(e){
+      if(e.key ==='Enter'){
+        const Nemli = document.createElement('li');
+        Nemli.innerHTML = input.value;
+        ul.appendChild(Nemli)
+      }
+  }
+ 
+//* abrir o li
+
   function abre(){
-    const lista = document.querySelector(".lista3");
-    
     if(lista.style.display == 'flex'){
         lista.style.display = 'none'
     } else{
         lista.style.display = 'flex'
-    }
-    
+    }   
   }
 
-
+//* fechar o li
 
   function fecha(){ 
-    const lista = document.querySelector(".lista3");
-
     if(lista.style.display == 'none'){
       lista.style.display = 'flex'
   } else{
@@ -25,5 +29,15 @@
   }
   }
 
+
+  //* elementos
   const button = document.querySelector('button')
+  const lista = document.querySelector(".lista3");
+  const li = document.querySelector('li');
+  const ul = document.querySelector('ul');
+  const input = document.querySelector('input');
+
+  //*Eventos
+  input.addEventListener('keyup', adicionar)
+  li.addEventListener('click', abre);
   button.addEventListener('click', fecha)
