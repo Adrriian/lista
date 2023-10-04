@@ -20,12 +20,14 @@ body{
 .input{
     width: 320px;
     margin-top: 10px;
+    z-index: 0;
 }
 input{
     width: 305px;
     padding: 5px;
 }
 .lista2{
+    z-index: 0;
     width: 320px;
     margin-top: 10px;
 }
@@ -45,13 +47,13 @@ ul li{
     cursor: pointer;
 }
 .lista3{
-    z-index: 0;
+    z-index: 1;
     display: none;
     justify-content: center;
     align-items: flex-end;
     background-color: rgb(172, 172, 172);
     color: white;
-    width: 750px;
+    width: 500px;
     height:750px;
     margin: auto;
 }

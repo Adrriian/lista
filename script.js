@@ -6,8 +6,14 @@
         const Nemli = document.createElement('li');
         Nemli.innerHTML = input.value;
         ul.appendChild(Nemli)
+
+        Nemli.addEventListener('click', abre);
+
+
+        input.value = '';
       }
-  }
+
+    }
  
 //* abrir o li
 
@@ -21,23 +27,22 @@
 
 //* fechar o li
 
-  function fecha(){ 
-    if(lista.style.display == 'none'){
-      lista.style.display = 'flex'
-  } else{
-      lista.style.display = 'none'
-  }
-  }
+    function fecha(){ 
+      if(lista.style.display == 'none'){
+          lista.style.display = 'flex'
+      } else{
+          lista.style.display = 'none'
+      }
+      }
+        
 
 
   //* elementos
   const button = document.querySelector('button')
   const lista = document.querySelector(".lista3");
-  const li = document.querySelector('li');
   const ul = document.querySelector('ul');
   const input = document.querySelector('input');
 
   //*Eventos
   input.addEventListener('keyup', adicionar)
-  li.addEventListener('click', abre);
   button.addEventListener('click', fecha)
