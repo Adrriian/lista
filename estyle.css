@@ -1,0 +1,51 @@
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(155, 248, 137);
+    color: black;
+    margin: AUTO;
+    width: 500px;
+    height: 500px;
+}
+.input{
+    width: 320px;
+    margin-top: 10px;
+}
+input{
+    width: 305px;
+    padding: 5px;
+}
+.lista2{
+    width: 320px;
+    margin-top: 10px;
+}
+ul{
+    padding: 0;
+    width: 320px;
+    display: flex;
+}
+ul li{
+    width: 320px;
+    background-color: rgb(177, 177, 177);
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+.lista3{
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    color: white;
+    width: 750px;
+    height:750px;
+    margin: auto;
+}
+button{
+    width: 50px;
+    height: 50px;
+}
