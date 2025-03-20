@@ -1,26 +1,36 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <link href="estyle.css" rel="stylesheet">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-        <div class="lista">
-            <div class="input">
-                <input type="text" placeholder="Escreva aqui">
-            </div>
-            <div class="lista2">
-                <ul>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="lista3">
-            <button>save</button>
-            <textarea></textarea>
-        </div>
-        <script src="script.js"></script>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <input type="text" placeholder="Digite uma tarefa (e aperte enter)" class="input" />
+        <ul class="list">
+            <li>
+                <input type="checkbox" />
+                <span>Nome da tarefa a fazer</span>
+            </li>
+            <li>
+                <input type="checkbox" />
+                <span>Nome da tarefa a fazer</span>
+            </li>
+            <li>
+                <input type="checkbox" />
+                <span>Nome da tarefa a fazer</span>
+            </li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
