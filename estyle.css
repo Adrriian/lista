@@ -1,94 +1,59 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgb(60, 238, 184);
-}
-.lista{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(133, 133, 133);
-    color: black;
-    margin: AUTO;
-    width: 500px;
-    height: 500px;
-}
-.input{
-    width: 320px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    z-index: 0;
-}
-input{
-    width: 305px;
-    padding: 5px;
-}
-.lista2{
-    z-index: 0;
-    width: 320px;
-}
-ul{
-    padding: 0;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-}
-ul li{
-    width: 320px;
-    background-color: rgb(177, 177, 177);
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 20px;
-    color: white;
-    cursor: pointer;
-}
-.lista3{
-    z-index: 1;
-    display: none;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: rgb(172, 172, 172);
-    color: white;
-    width: 500px;
-    height:750px;
-    margin: auto;
-}
-button{
-    width: 50px;
-    height: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (min-width:320px) and (max-width:375px){
-    .lista{
-        width: 300px;
-        height: 300px;
-    }
-    .input{
-        width: 200px;
-        display: flex;
-        justify-content: center;
-    }
-    input{
-        width: 150px;
-    }
-    .lista3{
-        width: 300px;
-        height:300px;
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    }
-    .lista2{
-        width: 300px;
+body {
+  background-color: #333;
+  color: #FFF;
+}
 
+header {
+  text-align: center;
+  margin: 30px 0;
+}
 
-    }
-    ul {
-      align-items: center;
-    }
-    ul li{
-        width: 200px;
-    }
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #555;
+  background-color: #222;
+  color: #FFF;
+  border-radius: 5px;
+  font-size: 2rem;
+  outline: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin: 20px 5px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.list li input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+span.done {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
