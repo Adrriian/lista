@@ -53,7 +53,7 @@ main {
   margin-right: 10px;
 }
 
-span.done {
+.list li.done span {
   text-decoration: line-through;
   opacity: 0.5;
 }
