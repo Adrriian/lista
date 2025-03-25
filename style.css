@@ -58,3 +58,13 @@ main {
   text-decoration: line-through;
   opacity: 0.5;
 }
+button{
+  width: 100px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
