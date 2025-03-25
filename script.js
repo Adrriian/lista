@@ -53,8 +53,7 @@ function renderList() {
     taskli.appendChild(span)
 
     list.appendChild(taskli)
-         salvar()
-    carregar()
   }
+   carregar()
 }
 renderList()
