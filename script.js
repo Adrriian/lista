@@ -40,6 +40,17 @@ function renderList() {
     taskli.appendChild(span);
 
     list.appendChild(taskli);
+
+     let taskdelete = document.createElement('button');
+    taskdelete.innerHTML = 'Delete';
+    taskdelete.addEventListener('click', () => {
+      tasks.splice(i, 1); // Remove o item da lista
+      salvar(); // Salva as alterações no localStorage
+      renderList(); // Atualiza a exibição
+    });
+
+
+    taskli.appendChild(taskdelete);
   }
 }
 
