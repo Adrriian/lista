@@ -42,10 +42,11 @@ main {
 
 .list li {
   margin: 20px 5px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 5% 80% 5%;;
   font-size: 2rem;
 }
+
 
 .list li input {
   width: 20px;
