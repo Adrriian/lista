@@ -69,7 +69,7 @@ button{
   border: none;
   cursor: pointer;
 }
-@media (max-width: 600px){
+@media (min-width:300px) and (max-width: 600px){
   * {
     margin: 0;
     padding: 0;
