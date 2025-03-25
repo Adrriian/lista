@@ -2,9 +2,9 @@ let input = document.querySelector('.input');
 let list = document.querySelector('.list');
 
 let tasks = [
-  { done: false, title: 'estudar' },
-  { done: true, title: 'js' },
-  { done: false, title: 'react' },
+  { done: false, title: 'Estudar Programação' },
+  { done: true, title: 'Ler 3 capitulos de Jeremias' },
+  { done: false, title: 'Ler 5 pg do livro a arte de pregar ' },
 ];
 
 input.addEventListener("keyup", (e) => {
